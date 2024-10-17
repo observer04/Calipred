@@ -17,22 +17,29 @@
       <p>Enter the following details to get the price of the house</p>
       <!-- Main input for receiving query to out ML-->
        <form action="{{url_for('predict')}}" method="POST">
-            <label for="longitude">Longitude</label><br>
-            <input type="text" name="longitude" placeholder="longitude" required="required"><br>
-            <label for="latitude">Latitude</label><br>
-            <input type="text" name="latitude" placeholder="latitude" required="required"><br>
-            <label for="housing_median_age">Housing Median Age</label><br>
-            <input type="text" name="housing_median_age" placeholder="housing_median_age" required="required"><br>
-            <label for="total_rooms">Total Rooms</label><br>
-            <input type="text" name="total_rooms" placeholder="total_rooms" required="required"><br>
-            <label for="total_bedrooms">Total Bedrooms</label><br>
-            <input type="text" name="total_bedrooms" placeholder="total_bedrooms" required="required"><br>
-            <label for="population">Population</label><br>
-            <input type="text" name="population" placeholder="population" required="required"><br>
-            <label for="households">Households</label><br>
-            <input type="text" name="households" placeholder="households" required="required"><br>
-            <label for="median_income">Median Income</label><br>
-            <input type="text" name="median_income" placeholder="median_income" required="required"><br>
+         <label for="median_income">Median Income</label><br>
+         <input type="text" name="MedInc" placeholder="median_income" required="required"><br>
+         
+         <label for="housing_median_age">Housing Median Age</label><br>
+         <input type="text" name="HouseAge" placeholder="housing_median_age" required="required"><br>
+         
+         <label for="average_rooms">Average Rooms</label><br>
+         <input type="text" name="AveRooms" placeholder="average_rooms" required="required"><br>
+         
+         <label for="average_bedrooms">Average Bedrooms</label><br>
+         <input type="text" name="AveBedrms" placeholder="average_bedrooms" required="required"><br>
+         
+         <label for="population">Population</label><br>
+         <input type="text" name="Population" placeholder="population" required="required"><br>
+         
+         <label for="average_occupancy">Average Occupancy</label><br>
+         <input type="text" name="AveOccup" placeholder="average_occupancy" required="required"><br>
+         
+         <label for="latitude">Latitude</label><br>
+         <input type="text" name="Latitude" placeholder="latitude" required="required"><br>
+         
+         <label for="longitude">Longitude</label><br>
+         <input type="text" name="Longitude" placeholder="longitude" required="required"><br>
             
             <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
       <script src="" async defer></script>
