@@ -27,8 +27,10 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
    data= [float(x) for x in request.form.values()]
-   final_input= np.array(data).reshape(1,-1)
-   print(final_input)
+   new_data= np.array(data).reshape(1,-1)
+   print(new_data)
+   final_input = scaler.transform(new_data)
+
    output= regmodel.predict(final_input)[0]
    return render_template('home.html', prediction_text='Predicted House Price: {}'.format(output))
    
